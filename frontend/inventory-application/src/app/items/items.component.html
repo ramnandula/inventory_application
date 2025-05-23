@@ -1,0 +1,31 @@
+<!--<h2>Details</h2>-->
+<!--<div><span>name: </span>{{item.name}}</div>-->
+<!--<div><span>description: </span>{{item.description}}</div>-->
+
+<!--<div>-->
+<!--  <label>Item name: </label>-->
+<!--  <input id="name" [(ngModel)]="item.name" placeholder="item">-->
+<!--</div>-->
+
+<h2>Itms</h2>
+
+
+<div class="row">
+  <div class="col-md-3" *ngFor="let item of items">
+    <div class="card" style="width: 18rem;">
+      <img src="https://inventory-application-ram.s3.us-east-1.amazonaws.com/sets/{{item.imageUrl}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{item.name}}</h5>
+        <p class="card-text">{{item.description}}</p>
+        <a href="#" class="btn btn-primary">Check out details!</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--<div *ngIf="selectedItem">-->
+<!--  <h2>{{selectedItem.name}} Details</h2>-->
+<!--  <div></div>-->
+<!--</div>-->
+
+
